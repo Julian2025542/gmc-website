@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+  background-color: #003865;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.activo {
+  background-color: #005fa3;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #003865;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+section p,
+section ul {
+  font-size: 1.1rem;
+}
+
+/* BOTÓN PRINCIPAL */
+.boton {
+  display: inline-block;
+  background-color: #0073cf;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.boton:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* CENTRAR SECCIÓN DE BIENVENIDA */
+.bienvenida {
+  text-align: center;
+}
+
+/* LISTAS */
+ul li {
+  margin-bottom: 10px;
+}
+
+/* IMÁGENES PEQUEÑAS Y CENTRADAS */
+img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #003865;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer .contacto {
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer .contacto li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
